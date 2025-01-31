@@ -1,0 +1,112 @@
+.right-side-menu {
+  position: fixed;
+  top: 0;
+  right: -400px;
+  width: 400px;
+  height: auto;
+  background-color: #0A1835;
+  box-shadow: -4px 0 8px rgba(0, 0, 0, 0.3);
+  color: white;
+  transition: right 0.3s ease-in-out;
+  z-index: 1000;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.right-side-menu.open {
+  right: 0;
+  overflow-y: auto;
+  height: 550px;
+}
+
+.menu-header2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.icon6 {
+  background-color: #494a4b;
+  border-radius: 50%;
+  padding: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.divider {
+  height: 1px;
+  background-color: #333232;
+  margin: 10px 0;
+}
+
+.category-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.category-form label {
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.category-form input, 
+.category-form select, 
+.category-form textarea {
+  padding: 10px;
+  color: rgb(202, 197, 197);
+  font-size: 14px;
+  border: 1px solid #2C2C2C;
+  border-radius: 5px;
+  background-color: #2C2C2C;
+  width: 90%;
+}
+
+/* Ensuring Grade & Subject and Price & Stock Quantity are in the same row */
+.form-row {
+  display: flex;
+  gap: 15px; /* Adds gap between the two fields */
+}
+
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  max-width: 50%; /* Ensures both fields have the same width */
+}
+
+.btn2 {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.cancel-button {
+  background-color: transparent;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  text-decoration: underline;
+}
+
+.submit-button {
+  background-color: #608BC1;
+  color: black;
+  border: none;
+  width: 90px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.submit-button:hover {
+  background-color: #3D67F5;
+  color: white;
+}
